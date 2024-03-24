@@ -29,7 +29,7 @@ Glavne funkcije softverskog rješenja:
 * Očitavanje karata putnika na ulazu u autobus putem uređaja za skeniranje karata
 
 ## Zadatak
-(U root repozitorija učitajte zadatak koji ste dobili i potom ovdje stavite link na njegovo otvaranje!)
+[(U root repozitorija učitajte zadatak koji ste dobili i potom ovdje stavite link na njegovo otvaranje!)](https://github.com/foivz/pi2024-zadace-msanko22/blob/master/Documentation/Zadatak%20-%20Gradski%20prijevoz.pdf)https://github.com/foivz/pi2024-zadace-msanko22/blob/master/Documentation/Zadatak%20-%20Gradski%20prijevoz.pdf 
 
 ## Resursi
 
