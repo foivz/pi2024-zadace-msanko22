@@ -10,9 +10,11 @@ namespace GradskiPrijevozVarazdin.Models
     {
         public int BrStanice { get; set; }
         public string NazivAdresaStanice { get; set; }
-        public int Brperonanastanici { get; set; }
+        public string Opis { get; set; }
+        public int BrPeronaNaStanici { get; set; }
         public string Linija { get; set; }
         public int Kapacitet { get; set; }
+        
 
         public override string ToString()
         {
