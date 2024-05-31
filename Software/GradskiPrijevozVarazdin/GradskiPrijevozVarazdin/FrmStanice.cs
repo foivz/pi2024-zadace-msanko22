@@ -15,16 +15,17 @@ using GradskiPrijevozVarazdin.Models;
 
 namespace GradskiPrijevozVarazdin
 {
-    public partial class Form1 : Form
+    public partial class FrmStanice : Form
     {
-        public Form1()
+        public FrmStanice()
         {
             InitializeComponent();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-
+            FrmIzmjena frmIzmjena = new FrmIzmjena();
+            frmIzmjena.ShowDialog();
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -51,6 +52,17 @@ namespace GradskiPrijevozVarazdin
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            FrmDodavanje frmDodavanje = new FrmDodavanje();
+            frmDodavanje.ShowDialog();
         }
     }
 }
