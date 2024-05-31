@@ -56,7 +56,14 @@ namespace GradskiPrijevozVarazdin
 
         private void button2_Click(object sender, EventArgs e)
         {
-            
+            Stanica odabranastnica = dgvStanice.CurrentRow.DataBoundItem as Stanica;
+            DialogResult result = MessageBox.Show("Želite li obrisati stanicu?", "Brisanje stanice", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (result == DialogResult.Yes)
+            {
+                StanicaRepository.Brisi(odabranastnica.BrStanice);
+                MessageBox.Show("Stanica je uspješno obrisana!", "Uspješno brisanje", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                ShowStanice();
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)

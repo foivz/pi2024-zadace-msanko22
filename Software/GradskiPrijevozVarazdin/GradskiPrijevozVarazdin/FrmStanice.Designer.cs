@@ -84,9 +84,9 @@
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(236, 98);
+            this.textBox2.Location = new System.Drawing.Point(270, 101);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(833, 22);
+            this.textBox2.Size = new System.Drawing.Size(799, 22);
             this.textBox2.TabIndex = 5;
             this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
@@ -106,9 +106,9 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(42, 104);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(55, 16);
+            this.label2.Size = new System.Drawing.Size(222, 16);
             this.label2.TabIndex = 7;
-            this.label2.Text = "Pretraži:";
+            this.label2.Text = "Pretraži stanice po liniji ili kapacitetu:";
             // 
             // FrmStanice
             // 

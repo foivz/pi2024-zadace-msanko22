@@ -14,7 +14,7 @@ namespace GradskiPrijevozVarazdin.Models
         public int BrPeronaNaStanici { get; set; }
         public string Linija { get; set; }
         public int Kapacitet { get; set; }
-        
+        public string Zaposlenik {  get; set; }
 
         public override string ToString()
         {

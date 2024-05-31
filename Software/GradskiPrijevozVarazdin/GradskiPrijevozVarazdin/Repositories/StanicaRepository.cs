@@ -35,6 +35,7 @@ namespace GradskiPrijevozVarazdin.Repositories
             int brperonanastanici = int.Parse(reader["BrPerona"].ToString());
             string linija = reader["Linija"].ToString();
             int kapacitet = int.Parse(reader["Kapacitet"].ToString());
+            string zaposlenik = reader["Zaposlenik"].ToString();
 
             var stanica = new Stanica
             {
@@ -43,9 +44,18 @@ namespace GradskiPrijevozVarazdin.Repositories
                 Opis = opis,
                 BrPeronaNaStanici = brperonanastanici,
                 Linija = linija,
-                Kapacitet = kapacitet
+                Kapacitet = kapacitet,
+                Zaposlenik = zaposlenik
             };
             return stanica;
+        }
+
+        public static void Brisi(int brstanice)
+        {
+            string sql = $"DELETE FROM Stanica WHERE BrStanice = {brstanice}";
+            DB.OpenConnection();
+            DB.ExecuteCommand(sql);
+            DB.CloseConnection();
         }
     }
 }
