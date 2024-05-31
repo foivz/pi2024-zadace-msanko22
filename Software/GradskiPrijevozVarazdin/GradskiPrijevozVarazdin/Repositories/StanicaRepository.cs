@@ -89,5 +89,12 @@ namespace GradskiPrijevozVarazdin.Repositories
             DB.ExecuteCommand(sql);
             DB.CloseConnection();
         }
+        public static void Izmjena(string adresa, string opis, string brperona, string linija, string kapacitet, string zaposlenik, int brstanice)
+        {
+            string sql = $"UPDATE Stanica SET Adresa = '{adresa}', Opis = '{opis}', BrPerona = '{brperona}', Linija = '{linija}', Kapacitet = '{kapacitet}', Zaposlenik = '{zaposlenik}' WHERE BrStanice = '{brstanice}'";
+            DB.OpenConnection();
+            DB.ExecuteCommand(sql);
+            DB.CloseConnection();
+        }
     }
 }

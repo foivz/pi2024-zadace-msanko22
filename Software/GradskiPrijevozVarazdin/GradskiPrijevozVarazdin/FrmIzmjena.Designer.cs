@@ -28,13 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
@@ -43,59 +36,14 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.txtZaposlenik = new System.Windows.Forms.TextBox();
+            this.txtKapacitet = new System.Windows.Forms.TextBox();
+            this.txtLinija = new System.Windows.Forms.TextBox();
+            this.txtBrPerona = new System.Windows.Forms.TextBox();
+            this.txtOpis = new System.Windows.Forms.TextBox();
+            this.txtAdresa = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
-            // 
-            // textBox7
-            // 
-            this.textBox7.Location = new System.Drawing.Point(324, 394);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(194, 22);
-            this.textBox7.TabIndex = 33;
-            // 
-            // textBox6
-            // 
-            this.textBox6.Location = new System.Drawing.Point(324, 350);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(194, 22);
-            this.textBox6.TabIndex = 32;
-            // 
-            // textBox5
-            // 
-            this.textBox5.Location = new System.Drawing.Point(324, 309);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(194, 22);
-            this.textBox5.TabIndex = 31;
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(324, 265);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(194, 22);
-            this.textBox4.TabIndex = 30;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(324, 204);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(194, 46);
-            this.textBox3.TabIndex = 29;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(324, 162);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(194, 22);
-            this.textBox2.TabIndex = 28;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(324, 121);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(194, 22);
-            this.textBox1.TabIndex = 27;
             // 
             // button2
             // 
@@ -117,12 +65,13 @@
             this.button1.TabIndex = 25;
             this.button1.Text = "Upiši";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label8.Location = new System.Drawing.Point(104, 394);
+            this.label8.Location = new System.Drawing.Point(104, 377);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(104, 20);
             this.label8.TabIndex = 24;
@@ -132,7 +81,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label7.Location = new System.Drawing.Point(100, 350);
+            this.label7.Location = new System.Drawing.Point(100, 333);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(94, 20);
             this.label7.TabIndex = 23;
@@ -142,7 +91,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label6.Location = new System.Drawing.Point(100, 309);
+            this.label6.Location = new System.Drawing.Point(100, 292);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(61, 20);
             this.label6.TabIndex = 22;
@@ -152,7 +101,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label5.Location = new System.Drawing.Point(100, 265);
+            this.label5.Location = new System.Drawing.Point(100, 248);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(97, 20);
             this.label5.TabIndex = 21;
@@ -162,7 +111,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label4.Location = new System.Drawing.Point(100, 204);
+            this.label4.Location = new System.Drawing.Point(100, 187);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(54, 20);
             this.label4.TabIndex = 20;
@@ -172,21 +121,11 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label3.Location = new System.Drawing.Point(100, 162);
+            this.label3.Location = new System.Drawing.Point(100, 145);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(141, 20);
             this.label3.TabIndex = 19;
             this.label3.Text = "Adresa stanice:";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label2.Location = new System.Drawing.Point(100, 121);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(101, 20);
-            this.label2.TabIndex = 18;
-            this.label2.Text = "Br.stanice:";
             // 
             // label1
             // 
@@ -199,19 +138,61 @@
             this.label1.Text = "Izmjena autobusne stanice";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
+            // txtZaposlenik
+            // 
+            this.txtZaposlenik.Location = new System.Drawing.Point(306, 375);
+            this.txtZaposlenik.Name = "txtZaposlenik";
+            this.txtZaposlenik.Size = new System.Drawing.Size(194, 22);
+            this.txtZaposlenik.TabIndex = 32;
+            // 
+            // txtKapacitet
+            // 
+            this.txtKapacitet.Location = new System.Drawing.Point(306, 331);
+            this.txtKapacitet.Name = "txtKapacitet";
+            this.txtKapacitet.Size = new System.Drawing.Size(194, 22);
+            this.txtKapacitet.TabIndex = 31;
+            // 
+            // txtLinija
+            // 
+            this.txtLinija.Location = new System.Drawing.Point(306, 290);
+            this.txtLinija.Name = "txtLinija";
+            this.txtLinija.Size = new System.Drawing.Size(194, 22);
+            this.txtLinija.TabIndex = 30;
+            // 
+            // txtBrPerona
+            // 
+            this.txtBrPerona.Location = new System.Drawing.Point(306, 246);
+            this.txtBrPerona.Name = "txtBrPerona";
+            this.txtBrPerona.Size = new System.Drawing.Size(194, 22);
+            this.txtBrPerona.TabIndex = 29;
+            // 
+            // txtOpis
+            // 
+            this.txtOpis.Location = new System.Drawing.Point(306, 185);
+            this.txtOpis.Multiline = true;
+            this.txtOpis.Name = "txtOpis";
+            this.txtOpis.Size = new System.Drawing.Size(194, 46);
+            this.txtOpis.TabIndex = 28;
+            // 
+            // txtAdresa
+            // 
+            this.txtAdresa.Location = new System.Drawing.Point(306, 143);
+            this.txtAdresa.Name = "txtAdresa";
+            this.txtAdresa.Size = new System.Drawing.Size(194, 22);
+            this.txtAdresa.TabIndex = 27;
+            // 
             // FrmIzmjena
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.ClientSize = new System.Drawing.Size(642, 553);
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtZaposlenik);
+            this.Controls.Add(this.txtKapacitet);
+            this.Controls.Add(this.txtLinija);
+            this.Controls.Add(this.txtBrPerona);
+            this.Controls.Add(this.txtOpis);
+            this.Controls.Add(this.txtAdresa);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label8);
@@ -220,7 +201,6 @@
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "FrmIzmjena";
             this.Text = "FrmIzmjena";
@@ -231,14 +211,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label8;
@@ -247,7 +219,12 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txtZaposlenik;
+        private System.Windows.Forms.TextBox txtKapacitet;
+        private System.Windows.Forms.TextBox txtLinija;
+        private System.Windows.Forms.TextBox txtBrPerona;
+        private System.Windows.Forms.TextBox txtOpis;
+        private System.Windows.Forms.TextBox txtAdresa;
     }
 }

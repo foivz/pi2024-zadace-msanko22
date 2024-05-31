@@ -24,8 +24,10 @@ namespace GradskiPrijevozVarazdin
 
         private void button3_Click(object sender, EventArgs e)
         {
-            FrmIzmjena frmIzmjena = new FrmIzmjena();
+            Stanica odabranaStanica = dgvStanice.CurrentRow.DataBoundItem as Stanica;
+            FrmIzmjena frmIzmjena = new FrmIzmjena(odabranaStanica);
             frmIzmjena.ShowDialog();
+            ShowStanice();
         }
 
         private void label1_Click(object sender, EventArgs e)
