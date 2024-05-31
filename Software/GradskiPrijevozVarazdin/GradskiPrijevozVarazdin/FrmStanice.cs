@@ -51,7 +51,16 @@ namespace GradskiPrijevozVarazdin
 
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
-
+            string searchText =textBox2.Text.Trim();
+            if (!string.IsNullOrWhiteSpace(searchText))
+            {
+                var stanica = StanicaRepository.Pretrazi(searchText);
+                dgvStanice.DataSource = stanica;
+            }
+            else
+            {
+                ShowStanice();
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)

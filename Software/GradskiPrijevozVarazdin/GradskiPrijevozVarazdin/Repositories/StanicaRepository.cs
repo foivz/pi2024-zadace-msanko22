@@ -57,5 +57,30 @@ namespace GradskiPrijevozVarazdin.Repositories
             DB.ExecuteCommand(sql);
             DB.CloseConnection();
         }
+
+        public static List<Stanica> Pretrazi(string searchText)
+        {
+            List<Stanica> stanice = new List<Stanica>();
+            string sql = $"SELECT * FROM Stanica WHERE Linija LIKE '%{searchText}%' OR Kapacitet LIKE '%{searchText}%'";
+            DB.OpenConnection();
+            SqlDataReader reader = DB.GetDataReader(sql);
+            while (reader.Read())
+            {
+                Stanica stanica = new Stanica
+                {
+                    BrStanice = int.Parse(reader["BrStanice"].ToString()),
+                    NazivAdresaStanice = reader["Adresa"].ToString(),
+                    Opis = reader["Opis"].ToString(),
+                    BrPeronaNaStanici = int.Parse(reader["BrPerona"].ToString()),
+                    Linija = reader["Linija"].ToString(),
+                    Kapacitet = int.Parse(reader["Kapacitet"].ToString()),
+                    Zaposlenik = reader["Zaposlenik"].ToString()
+                };
+                stanice.Add(stanica);
+            }
+            reader.Close();
+            DB.CloseConnection();
+            return stanice;
+        }
     }
 }
