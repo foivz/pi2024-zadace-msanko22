@@ -37,12 +37,12 @@
             this.label8 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.txtAdresa = new System.Windows.Forms.TextBox();
+            this.txtOpis = new System.Windows.Forms.TextBox();
+            this.txtBrPerona = new System.Windows.Forms.TextBox();
+            this.txtLinija = new System.Windows.Forms.TextBox();
+            this.txtKapacitet = new System.Windows.Forms.TextBox();
+            this.txtZaposlenik = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -125,6 +125,7 @@
             this.button1.TabIndex = 8;
             this.button1.Text = "Upiši";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -137,48 +138,48 @@
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // textBox2
+            // txtAdresa
             // 
-            this.textBox2.Location = new System.Drawing.Point(331, 133);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(194, 22);
-            this.textBox2.TabIndex = 11;
+            this.txtAdresa.Location = new System.Drawing.Point(331, 133);
+            this.txtAdresa.Name = "txtAdresa";
+            this.txtAdresa.Size = new System.Drawing.Size(194, 22);
+            this.txtAdresa.TabIndex = 11;
             // 
-            // textBox3
+            // txtOpis
             // 
-            this.textBox3.Location = new System.Drawing.Point(331, 175);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(194, 46);
-            this.textBox3.TabIndex = 12;
+            this.txtOpis.Location = new System.Drawing.Point(331, 175);
+            this.txtOpis.Multiline = true;
+            this.txtOpis.Name = "txtOpis";
+            this.txtOpis.Size = new System.Drawing.Size(194, 46);
+            this.txtOpis.TabIndex = 12;
             // 
-            // textBox4
+            // txtBrPerona
             // 
-            this.textBox4.Location = new System.Drawing.Point(331, 236);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(194, 22);
-            this.textBox4.TabIndex = 13;
+            this.txtBrPerona.Location = new System.Drawing.Point(331, 236);
+            this.txtBrPerona.Name = "txtBrPerona";
+            this.txtBrPerona.Size = new System.Drawing.Size(194, 22);
+            this.txtBrPerona.TabIndex = 13;
             // 
-            // textBox5
+            // txtLinija
             // 
-            this.textBox5.Location = new System.Drawing.Point(331, 280);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(194, 22);
-            this.textBox5.TabIndex = 14;
+            this.txtLinija.Location = new System.Drawing.Point(331, 280);
+            this.txtLinija.Name = "txtLinija";
+            this.txtLinija.Size = new System.Drawing.Size(194, 22);
+            this.txtLinija.TabIndex = 14;
             // 
-            // textBox6
+            // txtKapacitet
             // 
-            this.textBox6.Location = new System.Drawing.Point(331, 321);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(194, 22);
-            this.textBox6.TabIndex = 15;
+            this.txtKapacitet.Location = new System.Drawing.Point(331, 321);
+            this.txtKapacitet.Name = "txtKapacitet";
+            this.txtKapacitet.Size = new System.Drawing.Size(194, 22);
+            this.txtKapacitet.TabIndex = 15;
             // 
-            // textBox7
+            // txtZaposlenik
             // 
-            this.textBox7.Location = new System.Drawing.Point(331, 365);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(194, 22);
-            this.textBox7.TabIndex = 16;
+            this.txtZaposlenik.Location = new System.Drawing.Point(331, 365);
+            this.txtZaposlenik.Name = "txtZaposlenik";
+            this.txtZaposlenik.Size = new System.Drawing.Size(194, 22);
+            this.txtZaposlenik.TabIndex = 16;
             // 
             // FrmDodavanje
             // 
@@ -186,12 +187,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.ClientSize = new System.Drawing.Size(642, 553);
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtZaposlenik);
+            this.Controls.Add(this.txtKapacitet);
+            this.Controls.Add(this.txtLinija);
+            this.Controls.Add(this.txtBrPerona);
+            this.Controls.Add(this.txtOpis);
+            this.Controls.Add(this.txtAdresa);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label8);
@@ -220,11 +221,11 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox txtAdresa;
+        private System.Windows.Forms.TextBox txtOpis;
+        private System.Windows.Forms.TextBox txtBrPerona;
+        private System.Windows.Forms.TextBox txtLinija;
+        private System.Windows.Forms.TextBox txtKapacitet;
+        private System.Windows.Forms.TextBox txtZaposlenik;
     }
 }

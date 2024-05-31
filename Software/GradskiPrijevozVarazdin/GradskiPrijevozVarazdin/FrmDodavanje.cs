@@ -1,4 +1,5 @@
-﻿using System;
+﻿using GradskiPrijevozVarazdin.Repositories;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -29,6 +30,12 @@ namespace GradskiPrijevozVarazdin
 
         private void button2_Click(object sender, EventArgs e)
         {
+            Close();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            StanicaRepository.Dodaj(txtAdresa.Text, txtOpis.Text, txtBrPerona.Text, txtLinija.Text, txtKapacitet.Text,txtZaposlenik.Text);
             Close();
         }
     }

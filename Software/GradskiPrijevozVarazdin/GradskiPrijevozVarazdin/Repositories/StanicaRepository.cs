@@ -82,5 +82,12 @@ namespace GradskiPrijevozVarazdin.Repositories
             DB.CloseConnection();
             return stanice;
         }
+        public static void Dodaj(string adresa, string opis, string brperona, string linija, string kapacitet, string zaposlenik)
+        {
+            string sql = $"INSERT INTO Stanica(Adresa,Opis,BrPerona,Linija,Kapacitet,Zaposlenik) VALUES('{adresa}','{opis}','{brperona}','{linija}','{kapacitet}','{zaposlenik}')";
+            DB.OpenConnection();
+            DB.ExecuteCommand(sql);
+            DB.CloseConnection();
+        }
     }
 }

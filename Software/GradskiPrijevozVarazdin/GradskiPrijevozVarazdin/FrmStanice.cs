@@ -79,6 +79,7 @@ namespace GradskiPrijevozVarazdin
         {
             FrmDodavanje frmDodavanje = new FrmDodavanje();
             frmDodavanje.ShowDialog();
+            ShowStanice() ;
         }
     }
 }
