@@ -180,6 +180,7 @@
             this.cboLinija.Name = "cboLinija";
             this.cboLinija.Size = new System.Drawing.Size(194, 24);
             this.cboLinija.TabIndex = 17;
+            this.cboLinija.SelectedIndexChanged += new System.EventHandler(this.cboLinija_SelectedIndexChanged);
             // 
             // cboZaposlenik
             // 

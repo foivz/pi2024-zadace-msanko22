@@ -37,12 +37,12 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.txtZaposlenik = new System.Windows.Forms.TextBox();
             this.txtKapacitet = new System.Windows.Forms.TextBox();
-            this.txtLinija = new System.Windows.Forms.TextBox();
             this.txtBrPerona = new System.Windows.Forms.TextBox();
             this.txtOpis = new System.Windows.Forms.TextBox();
             this.txtAdresa = new System.Windows.Forms.TextBox();
+            this.cboLinija2 = new System.Windows.Forms.ComboBox();
+            this.cboZaposlenik2 = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // button2
@@ -138,26 +138,12 @@
             this.label1.Text = "Izmjena autobusne stanice";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // txtZaposlenik
-            // 
-            this.txtZaposlenik.Location = new System.Drawing.Point(306, 375);
-            this.txtZaposlenik.Name = "txtZaposlenik";
-            this.txtZaposlenik.Size = new System.Drawing.Size(194, 22);
-            this.txtZaposlenik.TabIndex = 32;
-            // 
             // txtKapacitet
             // 
             this.txtKapacitet.Location = new System.Drawing.Point(306, 331);
             this.txtKapacitet.Name = "txtKapacitet";
             this.txtKapacitet.Size = new System.Drawing.Size(194, 22);
             this.txtKapacitet.TabIndex = 31;
-            // 
-            // txtLinija
-            // 
-            this.txtLinija.Location = new System.Drawing.Point(306, 290);
-            this.txtLinija.Name = "txtLinija";
-            this.txtLinija.Size = new System.Drawing.Size(194, 22);
-            this.txtLinija.TabIndex = 30;
             // 
             // txtBrPerona
             // 
@@ -181,15 +167,43 @@
             this.txtAdresa.Size = new System.Drawing.Size(194, 22);
             this.txtAdresa.TabIndex = 27;
             // 
+            // cboLinija2
+            // 
+            this.cboLinija2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboLinija2.FormattingEnabled = true;
+            this.cboLinija2.Items.AddRange(new object[] {
+            "Linija 1",
+            "Linija 2",
+            "Linija 3"});
+            this.cboLinija2.Location = new System.Drawing.Point(306, 287);
+            this.cboLinija2.Name = "cboLinija2";
+            this.cboLinija2.Size = new System.Drawing.Size(194, 24);
+            this.cboLinija2.TabIndex = 33;
+            // 
+            // cboZaposlenik2
+            // 
+            this.cboZaposlenik2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboZaposlenik2.FormattingEnabled = true;
+            this.cboZaposlenik2.Items.AddRange(new object[] {
+            "Pero Peric",
+            "Ana Anic",
+            "Domagoj Juric",
+            "Ante Horvat",
+            "Ivan Novak"});
+            this.cboZaposlenik2.Location = new System.Drawing.Point(306, 372);
+            this.cboZaposlenik2.Name = "cboZaposlenik2";
+            this.cboZaposlenik2.Size = new System.Drawing.Size(194, 24);
+            this.cboZaposlenik2.TabIndex = 34;
+            // 
             // FrmIzmjena
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.ClientSize = new System.Drawing.Size(642, 553);
-            this.Controls.Add(this.txtZaposlenik);
+            this.Controls.Add(this.cboZaposlenik2);
+            this.Controls.Add(this.cboLinija2);
             this.Controls.Add(this.txtKapacitet);
-            this.Controls.Add(this.txtLinija);
             this.Controls.Add(this.txtBrPerona);
             this.Controls.Add(this.txtOpis);
             this.Controls.Add(this.txtAdresa);
@@ -220,11 +234,11 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtZaposlenik;
         private System.Windows.Forms.TextBox txtKapacitet;
-        private System.Windows.Forms.TextBox txtLinija;
         private System.Windows.Forms.TextBox txtBrPerona;
         private System.Windows.Forms.TextBox txtOpis;
         private System.Windows.Forms.TextBox txtAdresa;
+        private System.Windows.Forms.ComboBox cboLinija2;
+        private System.Windows.Forms.ComboBox cboZaposlenik2;
     }
 }

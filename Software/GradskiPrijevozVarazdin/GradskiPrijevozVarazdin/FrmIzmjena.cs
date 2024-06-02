@@ -31,9 +31,9 @@ namespace GradskiPrijevozVarazdin
             txtAdresa.Text = odabranaStanica.NazivAdresaStanice;
             txtOpis.Text = odabranaStanica.Opis;
             txtBrPerona.Text=odabranaStanica.BrPeronaNaStanici.ToString();
-            txtLinija.Text = odabranaStanica.Linija;
+            cboLinija2.SelectedItem = odabranaStanica.Linija.ToString();
             txtKapacitet.Text = odabranaStanica.Kapacitet.ToString();
-            txtZaposlenik.Text = odabranaStanica.Zaposlenik;
+            cboZaposlenik2.SelectedItem = odabranaStanica.Zaposlenik.ToString();
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -43,7 +43,7 @@ namespace GradskiPrijevozVarazdin
 
         private void button1_Click(object sender, EventArgs e)
         {
-            StanicaRepository.Izmjena(txtAdresa.Text, txtOpis.Text, txtBrPerona.Text, txtLinija.Text, txtKapacitet.Text, txtZaposlenik.Text, odabranaStanica.BrStanice);
+            StanicaRepository.Izmjena(txtAdresa.Text, txtOpis.Text, txtBrPerona.Text, cboLinija2.SelectedItem.ToString(), txtKapacitet.Text, cboZaposlenik2.SelectedItem.ToString(), odabranaStanica.BrStanice);
             Close();
         }
     }

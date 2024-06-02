@@ -48,5 +48,10 @@ namespace GradskiPrijevozVarazdin
         {
 
         }
+
+        private void cboLinija_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
