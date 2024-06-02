@@ -35,8 +35,13 @@ namespace GradskiPrijevozVarazdin
 
         private void button1_Click(object sender, EventArgs e)
         {
-            StanicaRepository.Dodaj(txtAdresa.Text, txtOpis.Text, txtBrPerona.Text, txtLinija.Text, txtKapacitet.Text,txtZaposlenik.Text);
+            StanicaRepository.Dodaj(txtAdresa.Text, txtOpis.Text, txtBrPerona.Text, cboLinija.SelectedItem.ToString(), txtKapacitet.Text,cboZaposlenik.SelectedItem.ToString());
             Close();
+        }
+
+        private void txtZaposlenik_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

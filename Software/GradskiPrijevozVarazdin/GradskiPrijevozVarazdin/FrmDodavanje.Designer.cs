@@ -40,9 +40,9 @@
             this.txtAdresa = new System.Windows.Forms.TextBox();
             this.txtOpis = new System.Windows.Forms.TextBox();
             this.txtBrPerona = new System.Windows.Forms.TextBox();
-            this.txtLinija = new System.Windows.Forms.TextBox();
             this.txtKapacitet = new System.Windows.Forms.TextBox();
-            this.txtZaposlenik = new System.Windows.Forms.TextBox();
+            this.cboLinija = new System.Windows.Forms.ComboBox();
+            this.cboZaposlenik = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // label1
@@ -160,13 +160,6 @@
             this.txtBrPerona.Size = new System.Drawing.Size(194, 22);
             this.txtBrPerona.TabIndex = 13;
             // 
-            // txtLinija
-            // 
-            this.txtLinija.Location = new System.Drawing.Point(331, 280);
-            this.txtLinija.Name = "txtLinija";
-            this.txtLinija.Size = new System.Drawing.Size(194, 22);
-            this.txtLinija.TabIndex = 14;
-            // 
             // txtKapacitet
             // 
             this.txtKapacitet.Location = new System.Drawing.Point(331, 321);
@@ -174,12 +167,33 @@
             this.txtKapacitet.Size = new System.Drawing.Size(194, 22);
             this.txtKapacitet.TabIndex = 15;
             // 
-            // txtZaposlenik
+            // cboLinija
             // 
-            this.txtZaposlenik.Location = new System.Drawing.Point(331, 365);
-            this.txtZaposlenik.Name = "txtZaposlenik";
-            this.txtZaposlenik.Size = new System.Drawing.Size(194, 22);
-            this.txtZaposlenik.TabIndex = 16;
+            this.cboLinija.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboLinija.FormattingEnabled = true;
+            this.cboLinija.Items.AddRange(new object[] {
+            "Linija 1",
+            "Linija 2",
+            "Linija 3"});
+            this.cboLinija.Location = new System.Drawing.Point(331, 280);
+            this.cboLinija.Name = "cboLinija";
+            this.cboLinija.Size = new System.Drawing.Size(194, 24);
+            this.cboLinija.TabIndex = 17;
+            // 
+            // cboZaposlenik
+            // 
+            this.cboZaposlenik.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboZaposlenik.FormattingEnabled = true;
+            this.cboZaposlenik.Items.AddRange(new object[] {
+            "Pero Peric",
+            "Ana Anic",
+            "Domagoj Juric",
+            "Ante Horvat",
+            "Ivan Novak"});
+            this.cboZaposlenik.Location = new System.Drawing.Point(331, 361);
+            this.cboZaposlenik.Name = "cboZaposlenik";
+            this.cboZaposlenik.Size = new System.Drawing.Size(194, 24);
+            this.cboZaposlenik.TabIndex = 18;
             // 
             // FrmDodavanje
             // 
@@ -187,9 +201,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.ClientSize = new System.Drawing.Size(642, 553);
-            this.Controls.Add(this.txtZaposlenik);
+            this.Controls.Add(this.cboZaposlenik);
+            this.Controls.Add(this.cboLinija);
             this.Controls.Add(this.txtKapacitet);
-            this.Controls.Add(this.txtLinija);
             this.Controls.Add(this.txtBrPerona);
             this.Controls.Add(this.txtOpis);
             this.Controls.Add(this.txtAdresa);
@@ -224,8 +238,8 @@
         private System.Windows.Forms.TextBox txtAdresa;
         private System.Windows.Forms.TextBox txtOpis;
         private System.Windows.Forms.TextBox txtBrPerona;
-        private System.Windows.Forms.TextBox txtLinija;
         private System.Windows.Forms.TextBox txtKapacitet;
-        private System.Windows.Forms.TextBox txtZaposlenik;
+        private System.Windows.Forms.ComboBox cboLinija;
+        private System.Windows.Forms.ComboBox cboZaposlenik;
     }
 }

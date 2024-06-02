@@ -78,7 +78,7 @@
             this.dgvStanice.Name = "dgvStanice";
             this.dgvStanice.RowHeadersWidth = 51;
             this.dgvStanice.RowTemplate.Height = 24;
-            this.dgvStanice.Size = new System.Drawing.Size(1024, 610);
+            this.dgvStanice.Size = new System.Drawing.Size(1047, 610);
             this.dgvStanice.TabIndex = 4;
             this.dgvStanice.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewStanice_CellContentClick);
             // 
