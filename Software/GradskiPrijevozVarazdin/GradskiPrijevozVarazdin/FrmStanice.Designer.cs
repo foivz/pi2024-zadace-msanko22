@@ -78,15 +78,15 @@
             this.dgvStanice.Name = "dgvStanice";
             this.dgvStanice.RowHeadersWidth = 51;
             this.dgvStanice.RowTemplate.Height = 24;
-            this.dgvStanice.Size = new System.Drawing.Size(1047, 610);
+            this.dgvStanice.Size = new System.Drawing.Size(1007, 610);
             this.dgvStanice.TabIndex = 4;
             this.dgvStanice.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewStanice_CellContentClick);
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(293, 101);
+            this.textBox2.Location = new System.Drawing.Point(344, 101);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(799, 22);
+            this.textBox2.Size = new System.Drawing.Size(708, 22);
             this.textBox2.TabIndex = 5;
             this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
@@ -104,11 +104,13 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label2.Location = new System.Drawing.Point(42, 104);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(222, 16);
+            this.label2.Size = new System.Drawing.Size(264, 16);
             this.label2.TabIndex = 7;
             this.label2.Text = "Pretraži stanice po liniji ili kapacitetu:";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // FrmStanice
             // 

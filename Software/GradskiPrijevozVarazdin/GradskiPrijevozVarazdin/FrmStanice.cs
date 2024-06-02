@@ -83,5 +83,10 @@ namespace GradskiPrijevozVarazdin
             frmDodavanje.ShowDialog();
             ShowStanice() ;
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
