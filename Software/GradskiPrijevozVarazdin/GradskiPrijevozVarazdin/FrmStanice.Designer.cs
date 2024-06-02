@@ -73,12 +73,13 @@
             // 
             // dgvStanice
             // 
+            this.dgvStanice.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvStanice.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvStanice.Location = new System.Drawing.Point(45, 148);
             this.dgvStanice.Name = "dgvStanice";
             this.dgvStanice.RowHeadersWidth = 51;
             this.dgvStanice.RowTemplate.Height = 24;
-            this.dgvStanice.Size = new System.Drawing.Size(1007, 610);
+            this.dgvStanice.Size = new System.Drawing.Size(1088, 610);
             this.dgvStanice.TabIndex = 4;
             this.dgvStanice.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewStanice_CellContentClick);
             // 
@@ -86,7 +87,7 @@
             // 
             this.textBox2.Location = new System.Drawing.Point(344, 101);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(708, 22);
+            this.textBox2.Size = new System.Drawing.Size(789, 22);
             this.textBox2.TabIndex = 5;
             this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 

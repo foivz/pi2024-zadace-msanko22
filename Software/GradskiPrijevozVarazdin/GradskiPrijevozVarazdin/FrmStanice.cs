@@ -44,6 +44,7 @@ namespace GradskiPrijevozVarazdin
         {
             List<Stanica> stanice = StanicaRepository.GetStanice();
             dgvStanice.DataSource = stanice;
+            
         }
 
         private void dataGridViewStanice_CellContentClick(object sender, DataGridViewCellEventArgs e)
