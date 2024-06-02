@@ -126,6 +126,7 @@
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "FrmStanice";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
